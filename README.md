@@ -4,22 +4,22 @@ This project focuses on performing Exploratory Data Analysis (EDA) and Feature E
 ## Table of Contents
 1. [Project Structure](#Project-Structure)
 2. [Exploratory Data Analysis (EDA)](#Exploratory-Data-Analysis-(EDA))
-+ [Overview of the Data]
-+ [Summary Statistics]
-+ [Distribution of Numerical Features]
-+ [Distribution of Categorical Features]
-+ [Correlation Analysis]
-+ [Identifying Missing Values]
-+ [Outlier Detection]
++ [Overview of the Data](#Overview-of-the-Data)
++ [Summary Statistics](#Summary-Statistics)
++ [Distribution of Numerical Features](#Distribution-of-Numerical-Features)
++ [Distribution of Categorical Features](#Distribution-of-Categorical-Features)
++ [Correlation Analysis](#Correlation-Analysis)
++ [Identifying Missing Values](#Identifying-Missing-Values)
++ [Outlier Detection](#Outlier-Detection)
 3. [Feature Engineering](#Feature-Engineering)
-+ Create Aggregate Features
-+ Extract Features
-+ Encode Categorical Variables
-+ Handle Missing Values
-+ Normalize/Standardize Numerical Features
++ [Create Aggregate Features](#Create-Aggregate-Features)
++ [Extract Features](#Extract-Features)
++ [Encode Categorical Variables](#Encode-Categorical-Variables)
++ [Handle Missing Values](Handle-Missing-Values)
++ [Normalize/Standardize Numerical Features](#Normalize/Standardize-Numerical-Features)
 4. [Modeling](#Modeling)
-+ Model Selection and Training
-+ Model Evaluation
++ [Model Selection and Training](#Model-Selection-and-Training)
++ [Model Evalution](#Model-Evalution)
 ## Project Structure
 ```|   .gitignore
 |   README.md
