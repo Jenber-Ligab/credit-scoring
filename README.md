@@ -3,7 +3,7 @@
 This project focuses on performing Exploratory Data Analysis (EDA) and Feature Engineering on a dataset, with the ultimate goal of building a predictive model for credit scoring. The analysis includes understanding the dataset's structure, identifying patterns, and preparing features for modeling.
 ## Table of Contents
 1. [Project Structure](#Project-Structure)
-2. [Exploratory Data Analysis (EDA)[(#Exploratory-Data-Analysis-(EDA))
+2. [Exploratory Data Analysis (EDA)](#Exploratory-Data-Analysis-(EDA))
 + Overview of the Data
 + Summary Statistics
 + Distribution of Numerical Features
@@ -12,15 +12,15 @@ This project focuses on performing Exploratory Data Analysis (EDA) and Feature E
 + Identifying Missing Values
 + Outlier Detection
 3. [Feature Engineering](#Feature-Engineering)
-Create Aggregate Features
-Extract Features
-Encode Categorical Variables
-Handle Missing Values
-Normalize/Standardize Numerical Features
-4. [Task 4 - Modeling](#Task 4 - Modeling)
-Model Selection and Training
-Model Evaluation
-Project Structure
++ Create Aggregate Features
++ Extract Features
++ Encode Categorical Variables
++ Handle Missing Values
++ Normalize/Standardize Numerical Features
+4. [Modeling](#Modeling)
++ Model Selection and Training
++ Model Evaluation
+### Project Structure
 text
 /project-directory
 │
