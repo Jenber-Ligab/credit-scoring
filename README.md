@@ -4,13 +4,13 @@ This project focuses on performing Exploratory Data Analysis (EDA) and Feature E
 ## Table of Contents
 1. [Project Structure](#Project-Structure)
 2. [Exploratory Data Analysis (EDA)](#Exploratory-Data-Analysis-(EDA))
-+ Overview of the Data
-+ Summary Statistics
-+ Distribution of Numerical Features
-+ Distribution of Categorical Features
-+ Correlation Analysis
-+ Identifying Missing Values
-+ Outlier Detection
++ [Overview of the Data]
++ [Summary Statistics]
++ [Distribution of Numerical Features]
++ [Distribution of Categorical Features]
++ [Correlation Analysis]
++ [Identifying Missing Values]
++ [Outlier Detection]
 3. [Feature Engineering](#Feature-Engineering)
 + Create Aggregate Features
 + Extract Features
@@ -20,38 +20,52 @@ This project focuses on performing Exploratory Data Analysis (EDA) and Feature E
 4. [Modeling](#Modeling)
 + Model Selection and Training
 + Model Evaluation
-### Project Structure
-text
-/project-directory
-│
-├── data/
-│   ├── raw/               # Raw data files
-│   ├── processed/         # Processed data files
-│
-├── notebooks/             # Jupyter notebooks for analysis
-│
-├── src/                   # Source code for data processing and modeling
-│
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
-Task 2 - Exploratory Data Analysis (EDA)
-Overview of the Data
+## Project Structure
+```|   .gitignore
+|   README.md
+|   requirements.txt
+|   
++---.github
+|   \---workflows
++---.vscode
+|       settings
+|       
++---data
++---notebooks
+|       __init__.py
+|      credit_score_analysis_notebook.ipynb
+|      eda_analysis_notebook.ipynb  
++---scripts
+|       __init__.py
+|       load_data.py
+|       feature_engg.py
+|       custom_logger.py
+|       credit_scoring_model.py
+|       credit_eda_visualize.py
+|       credit_eda_analysis.py
++---src
+|       __init__.py
+|       
+\---tests
+```
+## Exploratory Data Analysis (EDA)
+### Overview of the Data
 Understand the structure of the dataset, including:
 Number of rows
 Number of columns
 Data types for each feature
-Summary Statistics
+### Summary Statistics
 Calculate central tendency measures (mean, median) and dispersion metrics (standard deviation, variance).
 Analyze the shape of the dataset’s distribution.
-Distribution of Numerical Features
+### Distribution of Numerical Features
 Visualize distributions using histograms or density plots to identify patterns, skewness, and potential outliers.
-Distribution of Categorical Features
+### Distribution of Categorical Features
 Analyze frequency counts and variability within categorical features using bar plots or pie charts.
-Correlation Analysis
+### Correlation Analysis
 Assess relationships between numerical features using correlation matrices and heatmaps.
-Identifying Missing Values
+### Identifying Missing Values
 Identify missing values in the dataset to determine their impact and decide on appropriate imputation strategies.
-Outlier Detection
+### Outlier Detection
 Use box plots to visually identify outliers in numerical features.
 Task 3 - Feature Engineering
 Create Aggregate Features
