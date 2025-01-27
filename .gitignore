@@ -9,3 +9,4 @@
 /api/load_model.py
 /api/Procfile
 /api/model
+/tests/__pycache*
