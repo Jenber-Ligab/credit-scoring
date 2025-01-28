@@ -14,11 +14,27 @@ sys.path.append(os.path.abspath(os.path.join('..', 'scripts')))
 from feature_engg import FeatureEngineering # type: ignore
 from credit_scoring_model import CreditScoreRFM # type: ignore
 
+def download_file_from_google_drive(file_id, destination):
+    """
+    Downloads a file from Google Drive using gdown.
+
+    Args:
+        file_id (str): The Google Drive file ID.
+        destination (str): The local file path where the downloaded file will be saved.
+    """
+    url = f"https://drive.google.com/uc?id={file_id}"
+    
+    # Use gdown to download the file from Google Drive
+    gdown.download(url, destination, quiet=False)
+
+
 def load_model(model_path='model/best_model.pkl'):
     """Loads the model from local storage."""
     
+    #
     if not os.path.exists(model_path):
-        raise FileNotFoundError(f"Model file not found at: {model_path}")
+        file_id = '1WFVrXo2AtP13yRAoiYHekTyuv2BDMsY2'  # Replace with your actual file ID from Google Drive
+        download_file_from_google_drive(file_id, model_path)
     
     model = joblib.load(model_path)
     print(type(model))
