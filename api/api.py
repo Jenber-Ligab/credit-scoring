@@ -37,6 +37,7 @@ def download_file_from_google_drive(file_id, destination):
     """
     if gdown is not None:
         url = f"https://drive.google.com/uc?id={file_id}"
+        os.makedirs(os.path.dirname(destination), exist_ok=True)
         gdown.download(url, destination, quiet=False)
     else:
       raise Exception("gdown was not imported correctly. Please make sure it is in the requirements.txt file")
