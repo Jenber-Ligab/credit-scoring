@@ -10,9 +10,8 @@ from sklearn.preprocessing import MinMaxScaler, LabelEncoder, KBinsDiscretizer
 import numpy as np
 from datetime import datetime
 # Add the 'scripts' directory to the Python path for module imports
-sys.path.append(os.path.abspath(os.path.join('..', 'scripts')))
-from feature_engg import FeatureEngineering # type: ignore
-from credit_scoring_model import CreditScoreRFM # type: ignore
+from scripts.feature_engg import FeatureEngineering # type: ignore
+from scripts.credit_scoring_model import CreditScoreRFM # type: ignore
 
 def download_file_from_google_drive(file_id, destination):
     """
